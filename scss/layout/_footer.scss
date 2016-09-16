@@ -1,0 +1,6 @@
+footer {
+    h1 {
+        padding: 10px 10px;
+        @include font-fam-size( 1em, asli, bold, $text-black-m);
+    }
+}

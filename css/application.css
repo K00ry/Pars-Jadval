@@ -1,0 +1,155 @@
+body {
+  padding-top: 66px; }
+
+.container {
+  padding: 0; }
+
+.main {
+  padding: 0;
+  width: 100%;
+  margin: auto; }
+
+.is-visible {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -webkit-transition: all .3s ease-out; }
+
+.is-hidden {
+  opacity: 0;
+  -webkit-transform: translate(0, -60px);
+  -webkit-transition: all .3s ease-out; }
+
+.navbar {
+  width: 100%;
+  border-bottom: 2px solid rgba(112, 0, 206, 0.1); }
+  .navbar h1 {
+    display: inline-block;
+    font-size: 2.2em;
+    font-family: asli;
+    font-weight: bold;
+    color: rgba(34, 34, 34, 0.9);
+    margin: auto 40px; }
+  .navbar .navbar-toggler {
+    font-size: 1.9em;
+    outline: none; }
+
+.back-axs {
+  width: 100%; }
+
+.parallaxParent {
+  height: 50vh;
+  overflow: hidden; }
+
+.parallaxParent > * {
+  height: 200%;
+  position: relative;
+  top: -100%; }
+
+.axs1 {
+  background: url("../img/1.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 300px; }
+  .axs1 a {
+    margin: auto; }
+
+.axs2 {
+  background: url("../img/2.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 300px; }
+  .axs2 a {
+    margin: auto; }
+
+.axs3 {
+  background: url("../img/3.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 300px; }
+  .axs3 a {
+    margin: auto; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  text-align: center; }
+  .contact .top-nav {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid #BFBFBF; }
+    .contact .top-nav a {
+      font-size: 1em;
+      font-family: asli;
+      font-weight: bold;
+      color: rgba(34, 34, 34, 0.9); }
+  .contact .contact-info {
+    font-family: asli;
+    padding: 30px 0;
+    border-bottom: 2px solid #BFBFBF; }
+    .contact .contact-info h4 a {
+      font-size: 0.9em;
+      font-family: -apple-;
+      font-weight: bold; }
+    .contact .contact-info span {
+      font-size: 1em;
+      font-family: asli;
+      font-weight: bold;
+      color: rgba(34, 34, 34, 0.9); }
+
+.jabeja {
+  background-image: url("../img/pars-jadval.jpg");
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  background-size: 400px 550px; }
+
+footer h1 {
+  padding: 10px 10px;
+  font-size: 1em;
+  font-family: asli;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.9); }
+
+@font-face {
+  font-family: asli;
+  src: url(../fonts/AAmine.ttf); }
+@font-face {
+  font-family: dovom;
+  src: url(../fonts/zarghan.ttf); }
+a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.4); }
+
+.image-head {
+  font-family: asli;
+  font-size: 3em;
+  color: #fff;
+  text-decoration: none;
+  margin: auto;
+  z-index: 2; }
+
+.nav-link {
+  font-size: 1.3em;
+  font-family: asli;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.9); }
+
+.arrow {
+  width: 20px;
+  height: 20px; }
+
+/*# sourceMappingURL=application.css.map */

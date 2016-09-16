@@ -1,0 +1,32 @@
+@font-face {
+    font-family: asli;
+    src: url(../fonts/AAmine.ttf);
+}
+
+@font-face {
+    font-family: dovom;
+    src: url(../fonts/zarghan.ttf);
+}
+
+a {
+    text-decoration: none;
+    color: $text-black-l;
+}
+
+.image-head {
+    font-family: asli;
+    font-size: 3em;
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+    z-index: 2;
+}
+
+.nav-link {
+    @include font-fam-size( 1.3em, asli, bold, $text-black-m);
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+}
