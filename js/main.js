@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function() {
     // init controller
     var controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
 
@@ -105,5 +105,5 @@
 
 
 
+});
 
-}());
