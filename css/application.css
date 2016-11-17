@@ -45,10 +45,6 @@ body {
   position: relative;
   top: -100%; }
 
-.player {
-  height: 700px;
-  width: 100%; }
-
 .axs1 {
   background: url("../img/1.jpg") no-repeat center;
   background-size: cover;
