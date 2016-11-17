@@ -1,19 +1,5 @@
 $(document).ready(function() {
-    // init controller
-    var controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
-
-    // build scenes
-    new ScrollMagic.Scene({ triggerElement: "#parallax1" })
-        .setTween("#parallax1 > div", { y: "80%", ease: Linear.easeNone })
-
-    .addTo(controller);
-
-    /** ===========================================
-        Hide / show the master navigation menu
-    ============================================ */
-
-    // console.log('Window Height is: ' + $(window).height());
-    // console.log('Document Height is: ' + $(document).height());
+     jQuery("#bgndVideo").YTPlayer();
 
     var previousScroll = 0;
 
@@ -85,6 +71,18 @@ $(document).ready(function() {
 
 
 
+    
+/////////// smoooth scroll \\\\\\\\\\\
+
+
+  $('a[href^="#"]').click(function(event) {
+var id = $(this).attr("href");
+var offset = 0;
+var target = $(id).offset().top - offset;
+
+$('html, body').animate({scrollTop:target}, 700);
+event.preventDefault();
+});
 
 
 
