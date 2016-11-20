@@ -37,8 +37,10 @@
 
 // media-queries mixin \\
 @mixin media($break) {
+
+
     @if $break==landscape {
-        @media (min-width: $brk-landscape) {
+        @media (min-device-width: $brk-xs) and (max-device-width: $h-iphone6p) and (orientation: landscape) {
             @content;
         }
     }

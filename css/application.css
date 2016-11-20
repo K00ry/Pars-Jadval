@@ -22,7 +22,7 @@ body {
 .navbar {
   width: 100%;
   border-bottom: 2px solid rgba(112, 0, 206, 0.1); }
-  .navbar h1 {
+  .navbar #main h1 {
     display: inline-block;
     font-size: 2.2em;
     font-family: asli;
@@ -44,6 +44,20 @@ body {
   height: 200%;
   position: relative;
   top: -100%; }
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row-reverse; } }
+
+.nav-link {
+  font-size: 1.3em;
+  font-family: asli;
+  font-weight: bold;
+  color: rgba(34, 34, 34, 0.9); }
+
+.sidenav a {
+  display: none; }
 
 .axs1 {
   background: url("../img/1.jpg") no-repeat center;
@@ -115,7 +129,13 @@ body {
   background-image: url("../img/pars-jadval.jpg");
   background-position: 40% 50%;
   background-repeat: no-repeat;
-  background-size: 400px 550px; }
+  background-size: 414px 550px; }
+  @media (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {
+    .jabeja {
+      background-image: url("../img/pars-jadval.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 
 footer h1 {
   padding: 10px 10px;
@@ -124,12 +144,58 @@ footer h1 {
   font-weight: bold;
   color: rgba(34, 34, 34, 0.9); }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+  background-color: #e1e1e1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  font-size: 2em;
+  font-family: asli;
+  font-weight: 200;
+  color: rgba(34, 34, 34, 0.9); }
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -20px;
+  left: 3px;
+  font-size: 4em;
+  margin-right: 50px; }
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
 @font-face {
   font-family: asli;
   src: url(../fonts/AAmine.ttf); }
+
 @font-face {
   font-family: dovom;
   src: url(../fonts/zarghan.ttf); }
+
 a {
   text-decoration: none;
   color: rgba(34, 34, 34, 0.4); }
@@ -141,12 +207,6 @@ a {
   text-decoration: none;
   margin: auto;
   z-index: 2; }
-
-.nav-link {
-  font-size: 1.3em;
-  font-family: asli;
-  font-weight: bold;
-  color: rgba(34, 34, 34, 0.9); }
 
 .arrow {
   width: 20px;

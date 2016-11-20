@@ -1,5 +1,7 @@
 body {
     padding-top: 66px;
+
+
 }
 
 .container {
@@ -33,7 +35,7 @@ body {
 .navbar {
     width: 100%;
     border-bottom: 2px solid $dark-purple-l;
-    h1 {
+   #main h1 {
         display: inline-block;
         @include font-fam-size( 2.2em, asli, bold, $text-black-m);
         margin: auto 40px;

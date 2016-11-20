@@ -22,9 +22,7 @@ a {
     z-index: 2;
 }
 
-.nav-link {
-    @include font-fam-size( 1.3em, asli, bold, $text-black-m);
-}
+
 
 .arrow {
     width: 20px;
