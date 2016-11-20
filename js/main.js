@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+
+
+
+
     // init controller
     var controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
 
@@ -58,23 +63,23 @@ $(document).ready(function() {
 
     ///////   back to top function\\\\\\\\\\\\\\
 
+    var btn_top = $('#back-to-top');
 
-
-    if ($('#back-to-top').length) {
+    if (btn_top.length) {
         var scrollTrigger = 100, // px
             backToTop = function() {
                 var scrollTop = $(window).scrollTop();
                 if (scrollTop > scrollTrigger) {
-                    $('#back-to-top').addClass('show');
+                    btn_top.addClass('show');
                 } else {
-                    $('#back-to-top').removeClass('show');
+                    btn_top.removeClass('show');
                 }
             };
         backToTop();
         $(window).on('scroll', function() {
             backToTop();
         });
-        $('#back-to-top').on('click', function(e) {
+        btn_top.on('click', function(e) {
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
@@ -94,9 +99,26 @@ $(document).ready(function() {
 
 
 
+$('#btn').click(function () {
+    $('.sidenav a').fadeIn(900);
+    openNav();
+});
+    $('.closebtn').click(function () {
+        closeNav();
+    });
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        // document.getElementById("main").style.marginLeft = "250px";
 
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
 
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        // document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
 
+    }
 
 
 

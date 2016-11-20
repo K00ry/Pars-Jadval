@@ -80,5 +80,15 @@
     @include background('../img/pars-jadval.jpg',
     40% 50%,
     no-repeat,
-    400px 550px)
+    414px 550px)
+
+    @include media(landscape){
+        @include background('../img/pars-jadval.jpg',
+                center,
+                no-repeat,
+                cover)
+
+
+
+    }
 }
