@@ -97,25 +97,28 @@ $(document).ready(function() {
 
 
 
+    var links = $('.sidenav a');
+    var slide_nav = $('#mySidenav');
 
-
-$('#btn').click(function () {
-    $('.sidenav a').fadeIn(900);
+    $('#btn').click(function () {
+    links.fadeIn();
     openNav();
-});
+    });
     $('.closebtn').click(function () {
+        links.fadeOut();
         closeNav();
     });
     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        // document.getElementById("main").style.marginLeft = "250px";
+
+        slide_nav.css('width',"250px");
+
 
             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        // document.getElementById("main").style.marginLeft= "0";
+        slide_nav.css('width',"0");
+
         document.body.style.backgroundColor = "white";
 
     }
