@@ -1,2 +1,19 @@
+.nav{
+  display:none;
+  float: right;
 
+
+}
+
+.sub-link{
+  display: block;
+  @include font-fam-size( 1em,
+          asli,
+          bold,
+          $body-text);
+  text-align: right;
+  margin: 10px 30px 10px 0;
+
+
+}
 

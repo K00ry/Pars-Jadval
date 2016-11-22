@@ -124,6 +124,24 @@ $(document).ready(function() {
     }
 
 
+    function openSubLink(selector){
+
+        if  (selector.hasClass('expand')){
+            selector.removeClass('expand');
+
+        } else{
+            selector.addClass('expand');
+        }
+    }
+
+    $('.nav-link').click(function (e) {
+        e.preventDefault();
+        $('.nav').toggle('slow');
+       openSubLink($('.arrow-left-icon'));
+    });
+
+
+
 
 
 

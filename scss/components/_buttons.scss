@@ -5,20 +5,22 @@
   position: fixed;
   z-index: 1000000;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: rgba(33, 33, 33, 0.91);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 24px;
+.sidenav .nav-link {
+  padding: 8px ;
   text-decoration: none;
-
-
   @include flex-display(flex, row, space-between, 100%);
   transition: 0.3s;
+}
+
+.nav-link{
+
   @include font-fam-size( 2em,
           asli,
           200,
@@ -37,13 +39,15 @@
   //margin-left: 50px;
   position: absolute;
   top: -20px;
-  left: 3px;
+  right: 3px;
   font-size: 4em;
-  margin-right: 50px;
+  margin-left: 50px;
+  color: #ffffff;
 }
 
 
 #main {
+  @include flex-display(flex, row, space-between, 100%);
   transition: margin-left .5s;
   padding: 16px;
 }
@@ -58,5 +62,30 @@
   position: relative;
   height: 0;
   overflow: hidden;
+}
+
+
+
+.arrow-icon{
+  width:20px;
+  height:20px;
+
+}
+
+
+
+///// arrow turns down \\\\
+.arrow-left-icon{
+  width:20px;
+  height:20px;
+  transition: all 0.3s;
+
+}
+
+.expand{
+
+  transform-origin: center;
+  transform: rotateZ(-90deg);
+
 }
 

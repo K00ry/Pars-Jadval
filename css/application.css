@@ -45,6 +45,19 @@ body {
   position: relative;
   top: -100%; }
 
+.nav {
+  display: none;
+  float: right; }
+
+.sub-link {
+  display: block;
+  font-size: 1em;
+  font-family: asli;
+  font-weight: bold;
+  color: #E7F0E2;
+  text-align: right;
+  margin: 10px 30px 10px 0; }
+
 @media (min-width: 768px) {
   .nav {
     display: flex;
@@ -59,9 +72,6 @@ body {
   font-family: asli;
   font-weight: bold;
   color: rgba(34, 34, 34, 0.9); }
-
-.jakesh::after {
-  content: "\e60c"; }
 
 .axs1 {
   background: url("../img/1.jpg") no-repeat center;
@@ -154,20 +164,22 @@ footer h1 {
   position: fixed;
   z-index: 1000000;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: rgba(33, 33, 33, 0.91);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px; }
 
-.sidenav a {
-  padding: 8px 8px 8px 24px;
+.sidenav .nav-link {
+  padding: 8px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  transition: 0.3s;
+  transition: 0.3s; }
+
+.nav-link {
   font-size: 2em;
   font-family: asli;
   font-weight: 200;
@@ -179,11 +191,16 @@ footer h1 {
 .sidenav .closebtn {
   position: absolute;
   top: -20px;
-  left: 3px;
+  right: 3px;
   font-size: 4em;
-  margin-right: 50px; }
+  margin-left: 50px;
+  color: #ffffff; }
 
 #main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   transition: margin-left .5s;
   padding: 16px; }
 
@@ -197,6 +214,19 @@ footer h1 {
   position: relative;
   height: 0;
   overflow: hidden; }
+
+.arrow-icon {
+  width: 20px;
+  height: 20px; }
+
+.arrow-left-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s; }
+
+.expand {
+  transform-origin: center;
+  transform: rotateZ(-90deg); }
 
 @font-face {
   font-family: asli;

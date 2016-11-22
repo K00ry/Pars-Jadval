@@ -123,11 +123,21 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/img\/arrow.svg": {
+	"\/img\/arrow-up.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/img\/arrow.svg",
+		"oAP": "\/img\/arrow-up.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/left-trans.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/left-trans.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -164,6 +174,36 @@
 		"oAP": "\/img\/pars-jadval.jpg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/img\/right-trans.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/right-trans.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/Source-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/Source-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/white-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/white-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
