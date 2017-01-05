@@ -1,5 +1,10 @@
 body {
-  padding-top: 66px; }
+  padding-top: 75px; }
+
+a:hover,
+a:focus {
+  color: none;
+  text-decoration: none; }
 
 .container {
   padding: 0; }
@@ -21,7 +26,7 @@ body {
 
 .navbar {
   width: 100%;
-  border-bottom: 2px solid rgba(112, 0, 206, 0.1); }
+  background-color: #fff; }
   .navbar #main h1 {
     display: inline-block;
     font-size: 2.2em;
@@ -73,40 +78,45 @@ body {
   font-weight: bold;
   color: rgba(34, 34, 34, 0.9); }
 
-.axs1 {
-  background: url("../img/1.jpg") no-repeat center;
-  background-size: cover;
+.head-intro {
+  background: url(../img/pars-jadval-slogan.jpg) no-repeat 47% 50%;
+  background-size: 190% 150%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   align-items: center;
-  height: 300px; }
-  .axs1 a {
-    margin: auto; }
+  height: 50vh; }
+  .head-intro .image-head-slog {
+    font-family: asli;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    margin: 0; }
+  .head-intro .image-head-company {
+    font-family: asli;
+    font-size: 4em;
+    color: #fff;
+    text-decoration: none; }
+
+.axs1 {
+  background: url("../img/1.jpg") no-repeat center; }
 
 .axs2 {
-  background: url("../img/2.jpg") no-repeat center;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  height: 300px; }
-  .axs2 a {
-    margin: auto; }
+  background: url("../img/2.jpg") no-repeat center; }
 
 .axs3 {
-  background: url("../img/3.jpg") no-repeat center;
+  background: url("../img/3.jpg") no-repeat center; }
+
+.col-feature {
   background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  height: 300px; }
-  .axs3 a {
+  height: 50vh; }
+  .col-feature a {
     margin: auto; }
 
 .contact {
@@ -140,7 +150,7 @@ body {
       color: rgba(34, 34, 34, 0.9); }
 
 .jabeja {
-  background-image: url("../img/pars-jadval.jpg");
+  background-image: url("../img/35.jpg");
   background-position: 40% 50%;
   background-repeat: no-repeat;
   background-size: 414px 550px; }
@@ -170,7 +180,7 @@ footer h1 {
   transition: 0.5s;
   padding-top: 60px; }
 
-.sidenav .nav-link {
+.sidenav .nav-link-style {
   padding: 8px;
   text-decoration: none;
   display: flex;
@@ -179,11 +189,14 @@ footer h1 {
   width: 100%;
   transition: 0.3s; }
 
-.nav-link {
+.nav-link-style {
   font-size: 2em;
   font-family: asli;
   font-weight: 200;
   color: rgba(255, 255, 255, 0.9); }
+
+.nav {
+  display: none; }
 
 .sidenav a:hover, .offcanvas a:focus {
   color: #f1f1f1; }
@@ -219,7 +232,7 @@ footer h1 {
   width: 20px;
   height: 20px; }
 
-.arrow-left-icon {
+.arrow-style {
   width: 20px;
   height: 20px;
   transition: all 0.3s; }

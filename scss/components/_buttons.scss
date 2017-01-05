@@ -12,19 +12,23 @@
   padding-top: 60px;
 }
 
-.sidenav .nav-link {
+.sidenav .nav-link-style {
   padding: 8px ;
   text-decoration: none;
   @include flex-display(flex, row, space-between, 100%);
   transition: 0.3s;
 }
 
-.nav-link{
+.nav-link-style{
 
   @include font-fam-size( 2em,
           asli,
           200,
           rgba(255,255,255,.9));
+}
+
+.nav{
+  display:none;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
@@ -74,8 +78,11 @@
 
 
 
+
+
+
 ///// arrow turns down \\\\
-.arrow-left-icon{
+.arrow-style{
   width:20px;
   height:20px;
   transition: all 0.3s;

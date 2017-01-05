@@ -1,40 +1,43 @@
+.head-intro {
+    background: url(../img/pars-jadval-slogan.jpg) no-repeat 47% 50%;
+    background-size: 190% 150%;
+    @include flex-display(flex, column, center, 100%, center);
+    height: 50vh;
+    .image-head-slog {
+        font-family: asli;
+        font-size: 2em;
+        color: #fff;
+        text-decoration: none;
+        margin: 0;
+    }
+    .image-head-company {
+        font-family: asli;
+        font-size: 4em;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
 .axs1 {
     background: url("../img/1.jpg") no-repeat center;
-    background-size: cover;
-    @include flex-display(flex,
-    row,
-    space-between,
-    100%,
-    center);
-    height: 300px;
-    a {
-        margin: auto;
-    }
 }
 
 .axs2 {
     background: url("../img/2.jpg") no-repeat center;
-    background-size: cover;
-    @include flex-display(flex,
-    row,
-    space-between,
-    100%,
-    center);
-    height: 300px;
-    a {
-        margin: auto;
-    }
 }
 
 .axs3 {
     background: url("../img/3.jpg") no-repeat center;
+}
+
+.col-feature {
     background-size: cover;
     @include flex-display(flex,
     row,
     space-between,
     100%,
     center);
-    height: 300px;
+    height: 50vh;
     a {
         margin: auto;
     }
@@ -77,18 +80,13 @@
 }
 
 .jabeja {
-    @include background('../img/pars-jadval.jpg',
+    @include background('../img/35.jpg',
     40% 50%,
     no-repeat,
-    414px 550px)
-
-    @include media(landscape){
+    414px 550px) @include media(landscape) {
         @include background('../img/pars-jadval.jpg',
-                center,
-                no-repeat,
-                cover)
-
-
-
+        center,
+        no-repeat,
+        cover)
     }
 }
