@@ -1,7 +1,12 @@
 body {
-    padding-top: 66px;
+    padding-top: 75px;
 
 
+}
+a:hover,
+a:focus {
+  color: none;
+  text-decoration: none;
 }
 
 .container {
@@ -34,7 +39,7 @@ body {
 
 .navbar {
     width: 100%;
-    border-bottom: 2px solid $dark-purple-l;
+    background-color: #fff;
    #main h1 {
         display: inline-block;
         @include font-fam-size( 2.2em, asli, bold, $text-black-m);

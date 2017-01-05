@@ -11,17 +11,23 @@
 
 
 }
+.sideNav-title{
+ width:100%;
+  padding:10px;
 
+
+
+}
 .nav-link {
   @include font-fam-size( 1.3em, asli, bold, $text-black-m);
-}
-.sidenav{
-    a{
 
-      display:none;
-    }
+
 
 }
+
+
+
+
 
 
 

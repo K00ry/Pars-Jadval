@@ -1,3 +1,9 @@
+var $ = require('../node_modules/jquery/dist/jquery.js');
+var bootstrapCarousel = require('../node_modules/bootstrap/dist/js/npm.js');
+var bootstrap = require('../node_modules/bootstrap/dist/js/bootstrap.js');
+var TweenMax = require('../node_modules/gsap/src/uncompressed/TweenMax.js');
+var ScrollMagic = require('../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js');
+var setTween = require('../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js');
 $(document).ready(function() {
 
 
@@ -97,28 +103,64 @@ $(document).ready(function() {
 
 
 
+    var links = $('.sidenav a');
+    var slide_nav = $('#mySidenav');
 
-
-$('#btn').click(function () {
-    $('.sidenav a').fadeIn(900);
-    openNav();
-});
-    $('.closebtn').click(function () {
-        closeNav();
-    });
     function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        // document.getElementById("main").style.marginLeft = "250px";
 
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        slide_nav.css('width', "250px");
+        // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
 
     function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        // document.getElementById("main").style.marginLeft= "0";
+        slide_nav.css('width', "0");
         document.body.style.backgroundColor = "white";
-
     }
+
+    $('#btn').click(function() {
+        links.fadeIn();
+        openNav();
+    });
+    slide_nav.click(function() {
+        links.fadeOut();
+        closeNav();
+    });
+
+
+
+
+    function openSubLink(selector) {
+        if (selector.hasClass('expand')) {
+            selector.removeClass('expand');
+        } else {
+            selector.addClass('expand');
+        }
+    }
+
+    function openSubMenu(handler, div, svg) {
+        handler.click(function(e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+            
+            div.toggle('slow');
+            openSubLink(svg);
+        });
+    }
+
+    openSubMenu($('.nav-link-asli'), $('.asli'), $('.arrow-left-icon-asli'));
+    openSubMenu($('.nav-link-mahsool'), $('.mahsool'), $('.arrow-left-icon-mahsool'));
+    openSubMenu($('.nav-link-chideman'), $('.chideman'), $('.arrow-left-icon-chideman'));
+    openSubMenu($('.nav-link-about'), $('.about'), $('.arrow-left-icon-about'));
+
+    // $('.nav-link').click(function (e) {
+
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     $('.nav').toggle('slow');
+    //    openSubLink($('.arrow-left-icon'));
+    // });
+
 
 
 
@@ -128,4 +170,3 @@ $('#btn').click(function () {
 
 
 });
-
