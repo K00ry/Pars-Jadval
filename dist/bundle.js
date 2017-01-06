@@ -174,6 +174,10 @@
 	        links.fadeOut();
 	        closeNav();
 	    });
+	    $('.main,.contact').click(function() {
+	        links.fadeOut();
+	        closeNav();
+	    });
 
 
 
